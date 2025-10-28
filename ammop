@@ -1,0 +1,9 @@
+for i, v in next, getgc(true) do
+    if type(v) == 'table' and rawget(v, 'ammo') then
+        v.capacity = math.huge
+        v.power = 111111111
+        v.rpm = 0
+        v.firemode = 'auto'
+        v.spread = 0
+    end
+end
